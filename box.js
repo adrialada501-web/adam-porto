@@ -39,4 +39,59 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
   });
+
+  // =========================
+// CERTIFICATE MODAL
+// =========================
+
+const modal = document.querySelector(".certificate-modal");
+const modalImage = document.querySelector("#certificate-image");
+const closeModal = document.querySelector(".close-modal");
+
+document.querySelectorAll(".certificate-btn").forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        modalImage.src = button.dataset.image;
+
+        modal.classList.add("show");
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+});
+
+closeModal.addEventListener("click", () => {
+
+    modal.classList.remove("show");
+
+    document.body.style.overflow = "";
+
+});
+
+modal.addEventListener("click", (e) => {
+
+    if (e.target === modal) {
+
+        modal.classList.remove("show");
+
+        document.body.style.overflow = "";
+
+    }
+
+});
+
+document.addEventListener("keydown", (e) => {
+
+    if (e.key === "Escape") {
+
+        modal.classList.remove("show");
+
+        document.body.style.overflow = "";
+
+    }
+
+});
+
 });

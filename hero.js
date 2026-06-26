@@ -56,6 +56,16 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     0
   );
+  
+  heroTl.to(
+  ".hero-tagline",
+  {
+    yPercent: -400,
+    opacity: 0,
+    ease: "none",
+  },
+  0
+  );
 
   // Kolom kanan
   heroTl.to(
