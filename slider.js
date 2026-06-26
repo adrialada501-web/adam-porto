@@ -34,17 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
     {
         title:
             "Building strong legal foundations through public service, compliance, and digital innovation.",
-        image: "/images/AdamBP3C6.jpg",
+        image: "/images/AdamBP3C6.JPG",
     },
     {
         title:
             "At Mudiar Law Office, I strengthened my legal research, drafting, and litigation support skills through real cases.",
-        image: "/images/Mudiar2.jpeg",
+        image: "/images/Mudiar-2.jpeg",
     },
     {
         title:
             "At Pandeglang District Court, I learned how precision, organization, and accountability support the judicial process.",
-        image: "/images/PNP1.jpeg",
+        image: "/images/PNP-1.jpeg",
     },  
   ];
 
@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function animateNewSlide(index) {
     const newSliderImage = document.createElement("img");
+    console.log(slides[index].image);
     newSliderImage.src = slides[index].image;
     newSliderImage.alt = `Slide ${index + 1}`;
 
