@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = [
     {
         title:
-            "At BP3C Curug, I supported legal documentation, information management, and the development of the institution's official website.",
+            "At BP3C Curug, I Assisted in managing legal documentation, institutional information systems, and contributed to the development of the organization's official website.",
         image: img1,
     },
     {

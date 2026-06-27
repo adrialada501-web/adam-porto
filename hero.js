@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   heroTl.to(
     ".hero-col h2",
     {
-      yPercent: -110,
+      yPercent: -90,
       opacity: 0,
       ease: "none",
     },
