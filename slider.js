@@ -112,6 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         overwrite: "auto",
     });
 
+    /*
     const allImages = sliderImages.querySelectorAll("img");
     if (allImages.length > 3) {
         const removeCount = allImages.length - 3;
@@ -119,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
              sliderImages.removeChild(allImages[i]);
         }
     }
+    */
 
     animateNewTitle(index);
     animateIndicators(index);
