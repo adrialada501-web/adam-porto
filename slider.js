@@ -6,6 +6,13 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { triplanarTexture } from "three/tsl";
 
+
+import img1 from "./images/AdamBP3C12.jpg";
+import img2 from "./images/AdamBP3C6.JPG";
+import img3 from "./images/Mudiar-2.jpeg";
+import img4 from "./images/PNP-1.jpeg";
+
+
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -29,22 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
     {
         title:
             "At BP3C Curug, I supported legal documentation, information management, and the development of the institution's official website.",
-        image: "/images/AdamBP3C12.jpg",
+        image: img1,
     },
     {
         title:
             "Building strong legal foundations through public service, compliance, and digital innovation.",
-        image: "/images/AdamBP3C6.JPG",
+        image: img2,
     },
     {
         title:
             "At Mudiar Law Office, I strengthened my legal research, drafting, and litigation support skills through real cases.",
-        image: "/images/Mudiar-2.jpeg",
+        image: img3,
     },
     {
         title:
             "At Pandeglang District Court, I learned how precision, organization, and accountability support the judicial process.",
-        image: "/images/PNP-1.jpeg",
+        image: img4,
     },  
   ];
 
