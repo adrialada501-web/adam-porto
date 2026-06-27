@@ -40,11 +40,26 @@ const closeModal = document.querySelector(".close-modal");
 
 document.querySelectorAll(".certificate-btn").forEach((button) => {
   button.addEventListener("click", () => {
-    const key = button.dataset.image;
-    modalImage.src = certificateImages[key];
-    modal.classList.add("show");
-    document.body.style.overflow = "hidden";
-  });
+
+    modalImage.style.opacity = "0";
+
+    const img = new Image();
+
+    img.src = certificateImages[button.dataset.image];
+
+    img.onload = () => {
+
+        modalImage.src = img.src;
+
+        modal.classList.add("show");
+
+        requestAnimationFrame(() => {
+            modalImage.style.opacity = "1";
+        });
+
+    };
+
+});
 });
 
 closeModal.addEventListener("click", () => {
