@@ -13,6 +13,7 @@ import "./box.js";
 import "./experience-hero.js";
 import "./card.js";
 import "./slider.js";
+import "./certificate.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
