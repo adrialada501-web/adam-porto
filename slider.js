@@ -112,15 +112,9 @@ document.addEventListener("DOMContentLoaded", () => {
         overwrite: "auto",
     });
 
-    /*
-    const allImages = sliderImages.querySelectorAll("img");
-    if (allImages.length > 3) {
-        const removeCount = allImages.length - 3;
-        for (let i = 0; i < removeCount; i++) {
-             sliderImages.removeChild(allImages[i]);
-        }
+    while (sliderImages.children.length > 3) {
+    sliderImages.firstElementChild.remove();
     }
-    */
 
     animateNewTitle(index);
     animateIndicators(index);
@@ -186,11 +180,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   createIndices();
 
-  sliderTitle.innerHTML = `<h1>${slides[0].title}</h1>`;
-  currentSplit = new SplitText(sliderTitle.querySelector("h1"), {
-      type: "lines",
-      linesClass: "line",
-    });
+  animateNewSlide(0);
+  activeSlide = 0;
+
 
   ScrollTrigger.create({
     trigger: ".slider",
